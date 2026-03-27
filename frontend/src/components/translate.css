@@ -1,0 +1,272 @@
+/* Google Translate Widget Styles - White Background Optimized */
+
+/* Main container positioning - smaller and more subtle */
+.translator-container {
+  position: relative;
+  display: inline-block;
+  z-index: 1000;
+  transform: scale(0.9);
+  transform-origin: center;
+}
+
+/* Main wrapper */
+#google_translate_element {
+  display: inline-block;
+}
+
+/* Override default gadget styling */
+.goog-te-gadget {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-size: 12px !important;
+  color: #4b5563 !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Compact dropdown styling - optimized for white background */
+.goog-te-gadget-simple {
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  border: 1px solid #d1d5db !important;
+  background-color: #ffffff !important;
+  cursor: pointer !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: all 0.3s ease-in-out !important;
+  min-width: 130px !important;
+  max-width: 160px !important;
+  height: 38px !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* Hover effect - subtle for white background */
+.goog-te-gadget-simple:hover {
+  border-color: #6366f1 !important;
+  box-shadow: 0 4px 8px rgba(99, 102, 241, 0.15) !important;
+  background-color: #fefefe !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Hide "Powered by Google" text */
+.goog-te-gadget span,
+.goog-te-gadget-simple .goog-te-menu-value span:last-child {
+  display: none !important;
+}
+
+/* Style the dropdown text and arrow - darker for white background */
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: #374151 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  letter-spacing: 0.025em !important;
+}
+
+/* Custom language icon - modern translation symbol */
+.goog-te-gadget-icon {
+  width: 14px !important;
+  height: 14px !important;
+  margin-right: 2px !important;
+  background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBkPSJNMTIuODcgMTUuMDdMMTMuOSAxNi42OEwxNC45NCAxNS4wN0gxNi4wM0wxNC4zNSAxNy41SDE4VjE5SDEyVjE3LjVIMTUuNjVMMTYuOTYgMTUuNTZIMTMuMjJMMTIuODcgMTUuMDdaTTE4IDlWMTFIMTJWOUgxOFoiIGZpbGw9IiM2MzY2RjEiLz4KICA8cGF0aCBkPSJNMTEgN0gxM1Y5SDE5VjExSDEzVjEzSDExVjExSDVWOUgxMVY3WiIgZmlsbD0iIzYzNjZGMSIvPgogIDxwYXRoIGQ9Ik05IDEzVjExSDNWOUg5VjdINVY1SDlWM0gxMVY1SDE1VjdIMTFWOUgxN1YxMUgxMVYxM0g5WiIgZmlsbD0iIzYzNjZGMSIvPgogIDxwYXRoIGQ9Ik0xMiAyQzYuNDc3IDIgMiA2LjQ3NyAyIDEyQzIgMTcuNTIzIDYuNDc3IDIyIDEyIDIyQzE3LjUyMyAyMiAyMiAxNy41MjMgMjIgMTJDMjIgNi40NzcgMTcuNTIzIDIgMTIgMlpNMTIgMjBDNy41ODkgMjAgNCA2LjQxMSA0IDEyQzQgNy41ODkgNy41ODkgNCA0IDRDMTYuNDExIDQgMjAgNy41ODkgMjAgMTJDMjAgMTYuNDExIDE2LjQxMSAyMCAxMiAyMFoiIGZpbGw9IiM2MzY2RjEiLz4KICA8cGF0aCBkPSJNOSA5VjdINFY5SDZWMTFINFYxM0g2VjE1SDlWMTNIMTFWMTFIOVY5WiIgZmlsbD0iIzYzNjZGMSIvPgogIDx0ZXh0IHg9IjciIHk9IjEzIiBmb250LXNpemU9IjYiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjM2NkYxIj5BPC90ZXh0PgogIDx0ZXh0IHg9IjE0IiB5PSIxMyIgZm9udC1zaXplPSI2IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzYzNjZGMSI+QTwvdGV4dD4KPC9zdmc+') no-repeat center center !important;
+  background-size: contain !important;
+  flex-shrink: 0 !important;
+}
+
+/* Alternative language icon - cleaner version */
+.goog-te-gadget-simple::before {
+  content: '' !important;
+  display: inline-block !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin-right: 6px !important;
+  background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMCIgc3Ryb2tlPSIjNjM2NkYxIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIvPgogIDxwYXRoIGQ9Im0yIDEyaDIwIiBzdHJva2U9IiM2MzY2RjEiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHBhdGggZD0iTTEyIDJhMTUuMyAxNS4zIDAgMCAxIDQgMTBBMTUuMyAxNS4zIDAgMCAxIDEyIDIyQTE1LjMgMTUuMyAwIDAgMSA4IDEyQTE1LjMgMTUuMyAwIDAgMSAxMiAyWiIgc3Ryb2tlPSIjNjM2NkYxIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIvPgogIDx0ZXh0IHg9IjYiIHk9IjEwIiBmb250LXNpemU9IjQiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjNjM2NkYxIj5BPC90ZXh0PgogIDx0ZXh0IHg9IjE1IiB5PSIxNiIgZm9udC1zaXplPSI0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzYzNjZGMSI+YTwvdGV4dD4KPC9zdmc+') no-repeat center center !important;
+  background-size: contain !important;
+  flex-shrink: 0 !important;
+}
+
+/* Hide the default icon to use our custom one */
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+/* Dropdown menu styling - smaller and more compact */
+.goog-te-menu-frame {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 6px !important;
+  border: 1px solid #d1d5db !important;
+  overflow: hidden !important;
+  max-height: 300px !important;
+  overflow-y: auto !important;
+}
+
+/* Dropdown items styling - more compact */
+.goog-te-menu2-item div,
+.goog-te-menu2-item span {
+  font-size: 12px !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  color: #374151 !important;
+  padding: 6px 12px !important;
+  line-height: 1.4 !important;
+}
+
+/* Dropdown item hover effect */
+.goog-te-menu2-item-selected {
+  background-color: #eef2ff !important;
+  color: #6366f1 !important;
+}
+
+.goog-te-menu2-item:hover {
+  background-color: #f8fafc !important;
+}
+
+/* Remove Google branding from banner */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+/* Hide the top banner completely */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Hide Google Translate top notification bar */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+/* Hide the "Translated to" notification bar */
+body > .skiptranslate.goog-te-banner-frame {
+  display: none !important;
+}
+
+/* Hide any Google Translate notification bars */
+.skiptranslate.goog-te-banner-frame {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Additional targeting for the notification bar */
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+#goog-gt-tt,
+.goog-te-balloon-frame {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Hide the entire notification system */
+div[id^="goog-gt-"] {
+  display: none !important;
+}
+
+/* Prevent body margin adjustment when banner is supposed to show */
+body {
+  top: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Force hide any Google Translate overlays */
+.goog-te-banner-frame * {
+  display: none !important;
+}
+
+/* Mobile responsive adjustments - even smaller on mobile */
+@media (max-width: 768px) {
+  .translator-container {
+    transform: scale(0.85);
+  }
+  
+  .goog-te-gadget-simple {
+    min-width: 85px !important;
+    max-width: 100px !important;
+    padding: 5px 8px !important;
+    height: 28px !important;
+  }
+  
+  .goog-te-gadget-simple .goog-te-menu-value {
+    font-size: 11px !important;
+  }
+  
+  .goog-te-gadget-icon {
+    width: 12px !important;
+    height: 12px !important;
+  }
+}
+
+/* Small screen adjustments */
+@media (max-width: 480px) {
+  .translator-container {
+    transform: scale(0.8);
+  }
+  
+  .goog-te-gadget-simple {
+    min-width: 75px !important;
+    max-width: 90px !important;
+  }
+}
+
+/* Focus state for accessibility */
+.goog-te-gadget-simple:focus {
+  outline: 2px solid #6366f1 !important;
+  outline-offset: 2px !important;
+  border-color: #6366f1 !important;
+}
+
+/* Remove dark mode styles - optimized only for white background */
+.goog-te-menu-frame {
+  background-color: #ffffff !important;
+}
+
+.goog-te-menu2-item div,
+.goog-te-menu2-item span {
+  background-color: #ffffff !important;
+}
+
+/* Ensure consistent styling across different states */
+.goog-te-gadget-simple * {
+  box-sizing: border-box !important;
+}
+
+/* Custom arrow styling */
+.goog-te-gadget-simple::after {
+  content: '▼' !important;
+  color: #6b7280 !important;
+  font-size: 11px !important;
+  margin-left: auto !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.2s ease !important;
+}
+
+/* Rotate arrow on hover */
+.goog-te-gadget-simple:hover::after {
+  transform: rotate(180deg) !important;
+}
+
+/* Professional styling improvements */
+.goog-te-gadget-simple:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 1px 3px rgba(99, 102, 241, 0.2) !important;
+}
+
+/* Better integration with modern web design */
+.goog-te-gadget-simple {
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%) !important;
+  border: 1.5px solid #e2e8f0 !important;
+}
+
+.goog-te-gadget-simple:hover {
+  background: linear-gradient(145deg, #ffffff 0%, #f1f5f9 100%) !important;
+  border-color: #6366f1 !important;
+}
